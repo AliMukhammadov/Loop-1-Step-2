@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background-image: url("../img/background.jpg");
+    display: flex;
+    justify-content: center;
+}
+
+html {
+    height: 100%;
+}
+
+.container {
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: none;
+}
+
+.content-heading {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-list {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-radius: 5px;
+    margin-right: 110px;
+}
+
+.content-item {
+    width: 400px;
+    display: flex;
+    padding: 15px;
+    padding-left: 0;
+    text-transform: uppercase;
+    align-items: center;
+    border-top: 2px solid #dedede;
+}
+
+.content-item-heading {
+    padding-left: 50px;
+}
+
+.card {
+    padding: 8px 20px;
+}
+
+.mastercard {
+    display: flex;
+    align-items: center;
+    color: #0f0000;
+}
+
+.visa, .maestro {
+    color:  #b0afae;
+}
+
+.mastercard::after {
+    display: inline-block;
+    content: url("../img/check.svg");
+    margin-left: 100px;
+}
+
+.content-item-img {
+    width: 80px;
+    height: 80px;
+}
+
+.btn {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center ;
+    font-size: 20px;
+    background-color:  #598bdd;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 39px;
+    margin-left: -20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0 0 7px 7px;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.btn:active {
+    margin-top: 1px;
+}
+
+.btn::after {
+    display: block;
+    content: url("../img/arrow.svg");
+    margin-left: 3px;
+    width: 20px;
+    height: 20px;
+}
+
